@@ -1,0 +1,39 @@
+@import "variables/variables.scss";
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: $text-black;
+
+  label {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  input[type=number] {
+    width: 110px;
+    border: 1px solid $grey-divider;
+    border-radius: 6px;
+    padding: 8px 16px;
+
+
+
+
+    appearance: textfield;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+
+    &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    &::placeholder {
+      font-family: Montserrat, sans-serif;
+
+      color: $text-gray;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+}

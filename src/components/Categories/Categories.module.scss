@@ -1,0 +1,30 @@
+@import "variables/variables.scss";
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  text-align: center;
+  flex-direction: column;
+  transition: all 300ms;
+
+  img {
+    background: $bg-secondary;
+    border-radius: 12px;
+    object-fit: cover;
+    height: 350px;
+
+  }
+
+  span {
+    font-weight: 500;
+    font-size: 20px;
+    color: $text-black;
+  }
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transform: rotate(3deg);
+  }
+}

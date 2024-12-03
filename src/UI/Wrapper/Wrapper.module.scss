@@ -1,0 +1,42 @@
+@import "variables/variables.scss";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px;
+  background-color: $light-gray;
+  border-radius: 12px;
+  transition: all 300ms;
+
+  &:hover {
+    filter: brightness(90%);
+  }
+
+  span {
+    font-weight: 500;
+    font-size: 20px;
+    color: $text-gray;
+  }
+
+  .text {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 110%;
+    color: $text-black;
+
+    a {
+      color: $text-black;
+      text-decoration: none;
+      transition: opacity 300ms;
+
+      img {
+        margin-right: 16px;
+      }
+
+      &:hover {
+        opacity: .7;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import "variables/variables.scss";
+a {
+  text-decoration: none;
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  border: none;
+  background-color: $green;
+  color: $text-white;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 16px 32px;
+  transition: background-color 300ms;
+  text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $text-black;
+  }
+
+}
